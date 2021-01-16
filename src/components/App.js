@@ -10,7 +10,7 @@ import PickdConfirmation from './pickd/PickdConfirmation';
 
 const App = () => {
 	return (
-		<div>
+		<div className="ui class container">
 			<Router history={history}>
 				<Header />
 				<Route path="/" exact component={PickdHome} />
