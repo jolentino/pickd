@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import history from '../../history';
 import Button from '../utilities/Button';
-import logo from '../../imgs/leaf.svg';
+import logo from '../../assets/leaf.svg';
 
 const PickdHome = () => {
 	const label = 'Build Your Protein';
