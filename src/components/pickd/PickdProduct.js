@@ -7,7 +7,7 @@ import PickdForm from './PickdForm';
 
 class PickdProduct extends React.Component {
 	onFormSubmit = (formValues) => {
-		createProduct(formValues);
+		this.props.createProduct(formValues);
 	};
 
 	render() {
