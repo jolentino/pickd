@@ -1,0 +1,12 @@
+#jar {
+  position: relative;
+  width: 69%;
+}
+
+.flavor {
+  position: absolute;
+  width: 15%;
+  left: 35%;
+  top: 17.5%;
+  transform: rotate(20deg);
+}
