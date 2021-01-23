@@ -2,6 +2,7 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 
 import { createProduct } from '../../actions/';
+import PickdInteractive from './PickdInteractive';
 import PickdForm from './PickdForm';
 
 class PickdProduct extends React.Component {
@@ -11,11 +12,13 @@ class PickdProduct extends React.Component {
 
 	render() {
 		return (
-			<div className="ui grid">
-				<div className="eleven wide column">
-					<div className="ui segment">Interactive</div>
+			<div className="ui stackable grid">
+				<div className="twelve wide column">
+					<div className="ui center aligned segment">
+						<PickdInteractive />
+					</div>
 				</div>
-				<div className="five wide column">
+				<div className="four wide column">
 					<div className="ui segment">
 						<PickdForm onFormSubmit={this.onFormSubmit} />
 					</div>
