@@ -24,7 +24,6 @@ class PickdForm extends React.Component {
 	}
 }
 
-// FOR ME: Add form validation next
 export default reduxForm({
 	form: 'proteinForm',
 })(PickdForm);
