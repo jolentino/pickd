@@ -1,12 +1,36 @@
 #jar {
-  position: relative;
-  width: 69%;
+	position: relative;
+	width: 69%;
+}
+
+.flavor,
+.protein,
+.fat,
+.carb {
+  position: absolute;
+  width: 15%;
 }
 
 .flavor {
-  position: absolute;
-  width: 15%;
-  left: 35%;
-  top: 17.5%;
-  transform: rotate(20deg);
+	left: 35%;
+	top: 17%;
+	transform: rotate(20deg);
+}
+
+.protein {
+	left: 50%;
+	top: 30%;
+	transform: rotate(-20deg);
+}
+
+.fat {
+  left: 33%;
+	top: 46.5%;
+	transform: rotate(20deg);
+}
+
+.carb {
+  left: 45.5%;
+	top: 65%;
+	/* transform: rotate(-20deg); */
 }
