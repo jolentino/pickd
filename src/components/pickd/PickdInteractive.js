@@ -44,7 +44,7 @@ class PickdInteractive extends React.Component {
 	renderChoice(type) {
 		if (this.props[type]) {
 			const choice = this.props[type];
-			return <img src={this.choices[choice]} alt={`${choice}`} className={`${type}`} />;
+			return <img src={this.choices[choice]} alt={`${choice}`} className={`${type} animate__animated animate__fadeIn`} />;
 		} else return null;
 	}
 
