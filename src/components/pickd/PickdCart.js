@@ -22,7 +22,12 @@ class PickdCart extends React.Component {
 			);
 		}
 
-		return order;
+		return (
+			<>
+				{order}
+				<h5>Total: $24.99</h5>
+			</>
+		);
 	}
 
 	// Helper method for cart buttons.
