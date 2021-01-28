@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { textConverter } from '../../textConverter';
 import Button from '../utilities/Button';
 import history from '../../history';
+import { PayPal } from '../utilities/PayPal';
 
 class PickdCart extends React.Component {
 	// Helper method to render order summary.
@@ -53,7 +54,7 @@ class PickdCart extends React.Component {
 				<div>{this.props.product ? this.renderProductSummary() : 'Your cart is empty!'}</div>
 				<div>
 					{this.props.product ? this.configureButton('Start Over', 'create-a-product', 'grey') : null}
-					{this.props.product ? this.configureButton('Complete Order', 'order') : null}
+					{this.props.product ? <PayPal /> : null}
 				</div>
 			</div>
 		);
