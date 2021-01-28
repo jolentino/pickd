@@ -31,19 +31,11 @@ class PickdCart extends React.Component {
 		);
 	}
 
-	// Helper method for cart buttons.
-	configureButton = (label, location, color) => {
-		return (
-			<Button
-				buttonConfig={{
-					label: label,
-					onButtonClick: () => {
-						history.push(`/${location}`);
-					},
-					color: color,
-				}}
-			/>
-		);
+	// Config object for Button
+	buttonConfig = {
+		label: 'Start Over',
+		onButtonClick: () => history.push('/create-a-product'),
+		color: 'grey',
 	};
 
 	// Conditional cart.
@@ -53,7 +45,7 @@ class PickdCart extends React.Component {
 				<h1>Your Order:</h1>
 				<div>{this.props.product ? this.renderProductSummary() : 'Your cart is empty!'}</div>
 				<div>
-					{this.props.product ? this.configureButton('Start Over', 'create-a-product', 'grey') : null}
+					{this.props.product ? <Button buttonConfig={this.buttonConfig} /> : null}
 					{this.props.product ? <PayPal /> : null}
 				</div>
 			</div>
