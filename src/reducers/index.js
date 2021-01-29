@@ -5,6 +5,8 @@ const pickdReducers = (state = {}, action) => {
 	switch (action.type) {
 		case 'PRODUCT_CREATED':
 			return { ...state, product: action.payload };
+		case 'PRODUCT_ORDERED':
+			return { ...state, product: undefined, confirmation: action.payload };
 		default:
 			return state;
 	}

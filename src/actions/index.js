@@ -11,3 +11,14 @@ export const createProduct = (formValues) => {
 		history.push('/cart');
 	};
 };
+
+export const orderProduct = (response) => {
+	return (dispatch) => {
+		dispatch({
+			type: 'PRODUCT_ORDERED',
+			payload: response,
+		});
+
+		history.push(`/confirmation/${response.id}`);
+	};
+};
