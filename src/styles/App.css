@@ -2,6 +2,7 @@ html {
 	font-size: 10px;
 }
 
-.container {
+#pickd {
+	height: 100vh;
 	min-width: 320px;
 }
