@@ -1,27 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import '../styles/Header.css';
 import logo from '../assets/leaf.svg';
 
 const Header = () => {
 	return (
-		<div className="ui secondary pointing menu">
-			<Link to="/" className="link item">
-				<img
-					src={logo}
-					style={{
-						width: '20px',
-						marginRight: '5px',
-					}}
-					alt="Pick'd Logo"
-				/>
-				Pick'd
-			</Link>
-			<div className="right menu">
-				<Link to="/cart" className="link item">
-					Cart
+		<div id="nav-bar">
+			<div>
+				<Link to="/" className="nav-buttons" id="home-link">
+					<img src={logo} alt="Pick'd Logo" id="logo-image" />
+					<span id="logo-name">Pick'd</span>
+				</Link>
+				<Link to="/create-a-product" className="nav-buttons" id="build-link">
+					Build
 				</Link>
 			</div>
+
+			<Link to="/cart" className="nav-buttons" id="cart-link">
+				Cart
+			</Link>
 		</div>
 	);
 };

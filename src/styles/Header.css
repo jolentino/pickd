@@ -1,0 +1,52 @@
+#nav-bar {
+	display: flex;
+	padding: 2rem 10%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-buttons {
+	padding: 1rem;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #007f00;
+}
+
+.nav-buttons:hover {
+	text-decoration: none;
+	color: #4caf50;
+	border-bottom: 3px solid #4caf50;
+	margin-bottom: -3px;
+	transition: all 0.2s ease-in-out;
+}
+
+#home-link {
+	margin-right: 5rem;
+}
+
+#logo-image {
+	width: 1.8rem;
+	margin-right: 0.5rem;
+}
+
+@media (max-width: 700px) {
+	#nav-bar {
+		padding: 1rem 7.5%;
+	}
+
+	#home-link {
+		border: none;
+	}
+
+	#build-link {
+		display: none;
+	}
+
+	#logo-image {
+		width: 4rem;
+		border: none;
+	}
+	#logo-name {
+		display: none;
+	}
+}
