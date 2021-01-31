@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Router, Route } from 'react-router-dom';
 
+import '../styles/App.css';
 import history from '../history';
 import Header from './Header';
 import PickdHome from './pickd/PickdHome';
@@ -10,7 +11,7 @@ import PickdConfirmation from './pickd/PickdConfirmation';
 
 const App = () => {
 	return (
-		<div className="ui class container">
+		<div class="container">
 			<Router history={history}>
 				<Header />
 				<Route path="/" exact component={PickdHome} />
