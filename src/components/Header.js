@@ -16,10 +16,11 @@ const Header = () => {
 					Build
 				</Link>
 			</div>
-
-			<Link to="/cart" className="nav-buttons" id="cart-link">
-				Cart
-			</Link>
+			<div>
+				<Link to="/cart" className="nav-buttons" id="cart-link">
+					Cart
+				</Link>
+			</div>
 		</div>
 	);
 };

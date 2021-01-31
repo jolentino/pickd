@@ -1,12 +1,13 @@
 #nav-bar {
 	display: flex;
 	padding: 2rem 10%;
+	margin-bottom: 1rem;
 	justify-content: space-between;
 	align-items: center;
 }
 
 .nav-buttons {
-	padding: 1rem;
+	padding: 1.5rem 1rem;
 	font-size: 2rem;
 	font-weight: bold;
 	color: #007f00;
@@ -15,8 +16,8 @@
 .nav-buttons:hover {
 	text-decoration: none;
 	color: #4caf50;
-	border-bottom: 3px solid #4caf50;
-	margin-bottom: -3px;
+	border-bottom: 5px solid #4caf50;
+	margin-bottom: -5px;
 	transition: all 0.2s ease-in-out;
 }
 
@@ -34,19 +35,21 @@
 		padding: 1rem 7.5%;
 	}
 
-	#home-link {
+	.nav-buttons {
+		font-size: 1.75rem;
+	}
+
+	#home-link,
+	#logo-image {
 		border: none;
 	}
 
-	#build-link {
+	#build-link,
+	#logo-name {
 		display: none;
 	}
 
 	#logo-image {
-		width: 4rem;
-		border: none;
-	}
-	#logo-name {
-		display: none;
+		width: 3.5rem;
 	}
 }
