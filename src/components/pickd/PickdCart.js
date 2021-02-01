@@ -8,6 +8,8 @@ import Button from '../utilities/Button';
 import history from '../../history';
 
 class PickdCart extends React.Component {
+	total = null;
+
 	// Helper method to render order summary.
 	renderProductSummary() {
 		// Array for choices descriptions.
@@ -15,6 +17,8 @@ class PickdCart extends React.Component {
 		const { product } = this.props;
 
 		for (let choice in product) {
+			product[choice] === '32oz' ? (this.total = '24.99') : (this.total = '34.99');
+
 			order.push(
 				<div key={product[choice]}>
 					<p>
@@ -27,7 +31,7 @@ class PickdCart extends React.Component {
 		return (
 			<>
 				{order}
-				<h5>Total: $24.99</h5>
+				<h5>${this.total}</h5>
 			</>
 		);
 	}
@@ -53,7 +57,7 @@ class PickdCart extends React.Component {
 				<div>{this.props.product ? this.renderProductSummary() : 'Your cart is empty!'}</div>
 				<div>
 					{this.props.product ? <Button buttonConfig={this.buttonConfig} /> : null}
-					{this.props.product ? <PayPal onApprove={this.onApprove} /> : null}
+					{this.props.product ? <PayPal onApprove={this.onApprove} total={this.total} /> : null}
 				</div>
 			</div>
 		);
