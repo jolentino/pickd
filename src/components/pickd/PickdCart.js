@@ -35,7 +35,7 @@ class PickdCart extends React.Component {
 	// Config object for Button
 	buttonConfig = {
 		label: 'Start Over',
-		onButtonClick: () => history.push('/create-a-product'),
+		onButtonClick: () => history.push('/build'),
 		color: 'grey',
 	};
 

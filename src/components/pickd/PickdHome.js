@@ -8,7 +8,7 @@ import heroVideo from '../../assets/hero.gif';
 const PickdHome = () => {
 	const buttonConfig = {
 		label: "Let's Get Started",
-		onButtonClick: () => history.push('/create-a-product'),
+		onButtonClick: () => history.push('/build'),
 	};
 
 	return (

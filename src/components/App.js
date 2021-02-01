@@ -15,7 +15,7 @@ const App = () => {
 			<Router history={history}>
 				<Header />
 				<Route path="/" exact component={PickdHome} />
-				<Route path="/create-a-product" exact component={PickdProduct} />
+				<Route path="/build" exact component={PickdProduct} />
 				<Route path="/cart" exact component={PickdCart} />
 				<Route path="/confirmation/:order" exact component={PickdConfirmation} />
 			</Router>
