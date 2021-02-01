@@ -1,36 +1,41 @@
+#interactive-display {
+	display: grid;
+	width: 60%;
+	grid-template-columns: repeat(50, 1fr);
+	grid-template-rows: repeat(50, 1fr);
+}
+
 #jar {
 	position: relative;
-	width: 69%;
+	grid-column: 1 / 51;
+	grid-row: 1 / 51;
+	width: 100%;
 }
 
 .flavor,
 .protein,
 .fat,
 .carb {
-  position: absolute;
-  width: 15%;
+	width: 100%;
+}
+
+.flavor,
+.fat {
+	transform: rotate(15deg);
 }
 
 .flavor {
-	left: 35%;
-	top: 17%;
-	transform: rotate(20deg);
+	grid-area: 9 / 15 / 19 / 25;
 }
 
 .protein {
-	left: 50%;
-	top: 30%;
-	transform: rotate(-20deg);
+	grid-area: 15 / 27 / 25 / 37;
 }
 
 .fat {
-  left: 33%;
-	top: 46.5%;
-	transform: rotate(20deg);
+	grid-area: 23 / 15 / 33 / 25;
 }
 
 .carb {
-  left: 45.5%;
-	top: 65%;
-	/* transform: rotate(-20deg); */
+	grid-area: 35 / 22 / 45 / 32;
 }

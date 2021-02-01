@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 
+import '../../styles/PickdProduct.css';
 import { createProduct } from '../../actions/';
 import PickdInteractive from './PickdInteractive';
 import PickdForm from './PickdForm';
@@ -17,17 +18,9 @@ class PickdProduct extends React.Component {
 
 	render() {
 		return (
-			<div className="ui stackable grid">
-				<div className="twelve wide column">
-					<div className="ui center aligned segment">
-						<PickdInteractive />
-					</div>
-				</div>
-				<div className="four wide column">
-					<div className="ui segment">
-						<PickdForm onFormSubmit={this.onFormSubmit} />
-					</div>
-				</div>
+			<div id="build" className="container">
+				<PickdInteractive />
+				<PickdForm onFormSubmit={this.onFormSubmit} />
 			</div>
 		);
 	}
