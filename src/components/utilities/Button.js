@@ -1,8 +1,10 @@
 import * as React from 'react';
 
+import '../../styles/utilities.css';
+
 const Button = ({ buttonConfig: { label, onButtonClick, color } }) => {
 	return (
-		<button onClick={onButtonClick} className={`ui ${color ? color : 'green'} button`}>
+		<button onClick={onButtonClick} style={color ? { backgroundColor: color } : null}>
 			{label}
 		</button>
 	);
