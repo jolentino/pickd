@@ -1,23 +1,26 @@
 import * as React from 'react';
 
+import '../../styles/PickdHome.css';
 import history from '../../history';
 import Button from '../utilities/Button';
-import logo from '../../assets/leaf.svg';
+import heroVideo from '../../assets/hero.gif';
 
 const PickdHome = () => {
 	const buttonConfig = {
-		label: 'Build Your Protein',
+		label: "Let's Get Started",
 		onButtonClick: () => history.push('/create-a-product'),
 	};
 
 	return (
-		<div className="ui vertical center aligned segment">
-			<img src={logo} alt="Pick'd Logo" style={{ width: '100px' }} />
-			<h2>
-				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam fugit, voluptate aliquid vitae accusamus corrupti non, tempore magni consequatur
-				doloremque amet, itaque molestiae ipsa quisquam blanditiis assumenda dignissimos? Maxime, id.
-			</h2>
-			<Button buttonConfig={buttonConfig} className="item" />
+		<div id="hero" className="container">
+			<img src={heroVideo} alt="Pick'd Logo" id="hero-video" />
+			<h1>Your taste is unique. Why settle? </h1>
+			<p id="mission" className="headings">
+				Our mission at Pick'd is to provide customized plant-based protein powders, picked by you!
+				<br />
+				We value your health as well as the Earth's, so our ingredients are always organic and sustainable.
+			</p>
+			<Button buttonConfig={buttonConfig} />
 		</div>
 	);
 };
