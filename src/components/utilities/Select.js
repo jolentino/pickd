@@ -1,6 +1,8 @@
 import * as React from 'react';
 
-export const Select = ({ id, input, label, choices }) => {
+import '../../styles/utilities.css';
+
+export const Select = ({ input, choices }) => {
 	const renderOptions = () => {
 		return choices.map((choice, i) => {
 			// For HTML Compatibility
@@ -16,13 +18,13 @@ export const Select = ({ id, input, label, choices }) => {
 	};
 
 	return (
-		<div id={id}>
-			<label>{label}</label>
+		<div id={input.name}>
 			<select
 				value={input.value}
 				onChange={(e) => {
 					input.onChange(e.target.value);
 				}}>
+				<option selected="selected">Choose a {input.name}</option>
 				{renderOptions()}
 			</select>
 		</div>
