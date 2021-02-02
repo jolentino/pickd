@@ -5,6 +5,7 @@ import '../../styles/PickdCart.css';
 import { PayPal } from '../utilities/PayPal';
 import { orderProduct } from '../../actions';
 import { textConverter } from '../../textConverter';
+import PickdInteractive from './PickdInteractive';
 import Button from '../utilities/Button';
 import history from '../../history';
 
@@ -62,6 +63,7 @@ class PickdCart extends React.Component {
 					<Button buttonConfig={this.buttonConfig} id="reset" />
 					<PayPal onApprove={this.onApprove} total={total} />
 				</div>
+				<PickdInteractive finishedProduct={product} />
 			</div>
 		);
 	}

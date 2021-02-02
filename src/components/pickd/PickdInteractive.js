@@ -50,6 +50,7 @@ class PickdInteractive extends React.Component {
 
 	// Interactive Display with conditional image rendering.
 	render() {
+		console.log(this.props);
 		return (
 			<div id="interactive-display">
 				<img src={jar} alt="jar" id="jar" />
@@ -62,16 +63,25 @@ class PickdInteractive extends React.Component {
 	}
 }
 
-// FOR ME: A hardship I overcame...all hail StackOverflow and Redux-Form documentation
 // Redux Form method to directly access form values.
 const selector = formValueSelector('proteinForm');
 
 // Form values from specific fields are added to the state to be recieved.
-const mapStateToProps = (state) => {
-	const flavor = selector(state, 'flavor');
-	const protein = selector(state, 'protein');
-	const fat = selector(state, 'fat');
-	const carb = selector(state, 'carb');
+const mapStateToProps = (state, { finishedProduct }) => {
+	let flavor, protein, fat, carb;
+
+	// Distinguishes props between PickdForm and PickdCart.
+	if (!finishedProduct) {
+		flavor = selector(state, 'flavor');
+		protein = selector(state, 'protein');
+		fat = selector(state, 'fat');
+		carb = selector(state, 'carb');
+	} else {
+		flavor = finishedProduct.flavor;
+		protein = finishedProduct.protein;
+		fat = finishedProduct.fat;
+		carb = finishedProduct.carb;
+	}
 	return { flavor, protein, fat, carb };
 };
 
