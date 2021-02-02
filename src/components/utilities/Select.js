@@ -24,7 +24,7 @@ export const Select = ({ input, choices }) => {
 				onChange={(e) => {
 					input.onChange(e.target.value);
 				}}>
-				<option selected="selected">Choose a {input.name}</option>
+				<option>Choose a {input.name}</option>
 				{renderOptions()}
 			</select>
 		</div>

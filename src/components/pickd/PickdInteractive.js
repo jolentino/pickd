@@ -42,7 +42,7 @@ class PickdInteractive extends React.Component {
 
 	// Helper method to render images onto Interactive Display configured by choice type and user input.
 	renderChoice(type) {
-		if (this.props[type]) {
+		if (this.props[type] && this.props[type] !== `Choose a ${type}`) {
 			const choice = this.props[type];
 			return <img src={this.choices[choice]} alt={`${choice}`} className={`${type} animate__animated animate__fadeIn`} />;
 		} else return null;

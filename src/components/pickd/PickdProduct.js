@@ -8,6 +8,10 @@ import PickdForm from './PickdForm';
 
 class PickdProduct extends React.Component {
 	onFormSubmit = (formValues) => {
+		// Validation to prevent default value
+		for (let choice in formValues) {
+			if (formValues[choice] === `Choose a ${choice}`) formValues[choice] = '';
+		}
 		// Validation for missing choice.
 		if (!formValues.size || !formValues.flavor || !formValues.protein || !formValues.fat || !formValues.carb) {
 			return alert('Please make a choice for each category.');
