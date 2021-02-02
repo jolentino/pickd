@@ -19,11 +19,6 @@
 	width: 100%;
 }
 
-.flavor,
-.fat {
-	transform: rotate(15deg);
-}
-
 .flavor {
 	grid-area: 9 / 15 / 19 / 25;
 }

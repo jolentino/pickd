@@ -1,8 +1,10 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { formValueSelector } from 'redux-form';
+import { motion } from 'framer-motion';
 
 import '../../styles/components/PickdInteractive.css';
+import animation from '../../animation';
 import jar from '../../assets/jar.svg';
 import chocolate from '../../assets/chocolate-bar.svg';
 import chocolatePeanutButter from '../../assets/peanut-butter.svg';
@@ -44,7 +46,7 @@ class PickdInteractive extends React.Component {
 	renderChoice(type) {
 		if (this.props[type] && this.props[type] !== `Choose a ${type}`) {
 			const choice = this.props[type];
-			return <img src={this.choices[choice]} alt={`${choice}`} className={`${type} animate__animated animate__fadeIn`} />;
+			return <motion.img src={this.choices[choice]} alt={`${choice}`} className={type} {...animation} />;
 		} else return null;
 	}
 
