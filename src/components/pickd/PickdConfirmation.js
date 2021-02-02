@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 
-import '../../styles/PickdConfirmation.css';
+import '../../styles/components/PickdConfirmation.css';
 import logo from '../../assets/leaf.svg';
 class PickdConfirmation extends React.Component {
 	render() {

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import '../../styles/PickdForm.css';
+import '../../styles/components/PickdForm.css';
 import { Field, reduxForm } from 'redux-form';
 import { Select } from '../utilities/Select';
 import Button from '../utilities/Button';

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import '../../styles/PickdHome.css';
+import '../../styles/components/PickdHome.css';
 import history from '../../history';
 import Button from '../utilities/Button';
 import heroVideo from '../../assets/hero.gif';

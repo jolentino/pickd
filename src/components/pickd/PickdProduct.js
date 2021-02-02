@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 
-import '../../styles/PickdProduct.css';
+import '../../styles/components/PickdProduct.css';
 import { createProduct } from '../../actions/';
 import PickdInteractive from './PickdInteractive';
 import PickdForm from './PickdForm';

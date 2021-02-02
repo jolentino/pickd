@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Router, Route } from 'react-router-dom';
 
-import '../styles/App.css';
+import '../styles/components/App.css';
 import history from '../history';
 import Header from './Header';
 import PickdHome from './pickd/PickdHome';

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 import { formValueSelector } from 'redux-form';
 
-import '../../styles/PickdInteractive.css';
+import '../../styles/components/PickdInteractive.css';
 import jar from '../../assets/jar.svg';
 import chocolate from '../../assets/chocolate-bar.svg';
 import chocolatePeanutButter from '../../assets/peanut-butter.svg';

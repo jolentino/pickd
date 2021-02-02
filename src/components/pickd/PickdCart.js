@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 
-import '../../styles/PickdCart.css';
+import '../../styles/components/PickdCart.css';
 import { PayPal } from '../utilities/PayPal';
 import { orderProduct } from '../../actions';
 import { textConverter } from '../../textConverter';
