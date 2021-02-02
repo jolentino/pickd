@@ -57,13 +57,13 @@ class PickdCart extends React.Component {
 
 		return (
 			<div id="product-summary">
-				<div id="choices-summary">{order}</div>
-				<h1>Total: ${total}</h1>
-				<div id="cart-buttons">
+				<PickdInteractive finishedProduct={product} />
+				<div id="order-info">
+					<div>{order}</div>
+					<h1>Total: ${total}</h1>
 					<Button buttonConfig={this.buttonConfig} id="reset" />
 					<PayPal onApprove={this.onApprove} total={total} />
 				</div>
-				<PickdInteractive finishedProduct={product} />
 			</div>
 		);
 	}
@@ -72,7 +72,7 @@ class PickdCart extends React.Component {
 	render() {
 		return (
 			<div id="cart" className="container">
-				<h1>Your Order:</h1>
+				<h1 id="cart-title">Your Order:</h1>
 				{this.props.product ? this.renderProductSummary() : 'Your cart is empty!'}
 			</div>
 		);

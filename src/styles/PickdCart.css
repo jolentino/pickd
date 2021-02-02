@@ -1,6 +1,27 @@
 #cart {
-  border: 1px solid olive;
-  max-width: 50rem;
-  font-size: 2rem;
-  text-align: center;
+	max-width: 75rem;
+	font-size: 2rem;
+	text-align: center;
+}
+
+#cart-title{
+	margin-bottom: 2.5rem;
+}
+
+#product-summary {
+	display: flex;
+	padding: 2rem;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#order-info {
+	padding: 1rem;
+	min-width: 30rem;
+}
+
+@media (max-width: 700px) {
+	#product-summary {
+		flex-direction: column-reverse;
+	}
 }
