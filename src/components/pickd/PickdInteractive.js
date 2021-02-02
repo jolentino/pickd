@@ -50,7 +50,6 @@ class PickdInteractive extends React.Component {
 
 	// Interactive Display with conditional image rendering.
 	render() {
-		console.log(this.props);
 		return (
 			<div id="interactive-display">
 				<img src={jar} alt="jar" id="jar" />
