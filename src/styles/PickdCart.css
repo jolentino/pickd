@@ -4,24 +4,26 @@
 	text-align: center;
 }
 
-#cart-title{
-	margin-bottom: 2.5rem;
+#cart-title {
+	margin-bottom: 5rem;
 }
 
 #product-summary {
 	display: flex;
-	padding: 2rem;
 	justify-content: space-around;
 	align-items: center;
 }
 
 #order-info {
-	padding: 1rem;
 	min-width: 30rem;
 }
 
 @media (max-width: 700px) {
 	#product-summary {
 		flex-direction: column-reverse;
+	}
+
+	#cart-title {
+		margin-bottom: 0;
 	}
 }

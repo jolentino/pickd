@@ -60,7 +60,7 @@ class PickdCart extends React.Component {
 				<PickdInteractive finishedProduct={product} />
 				<div id="order-info">
 					<div>{order}</div>
-					<h1>Total: ${total}</h1>
+					<h3>Total: ${total}</h3>
 					<Button buttonConfig={this.buttonConfig} id="reset" />
 					<PayPal onApprove={this.onApprove} total={total} />
 				</div>

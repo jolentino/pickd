@@ -7,6 +7,7 @@
 }
 
 .nav-buttons {
+	text-decoration: none;
 	padding: 1.5rem 1rem;
 	font-size: 2rem;
 	font-weight: bold;
@@ -14,7 +15,6 @@
 }
 
 .nav-buttons:hover {
-	text-decoration: none;
 	color: #4caf50;
 	border-bottom: 5px solid #4caf50;
 	margin-bottom: -5px;
