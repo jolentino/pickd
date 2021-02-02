@@ -19,13 +19,14 @@ class PickdForm extends React.Component {
 				<h1>Pick'd for you, Pick'd by you.</h1>
 				<p>
 					In an effort to keep our products sustainable, we ship our powders in eco-friendly glass jars. Here at Pick'd, we take pride in our approach to use
-					less plastic.
-					<br />
-					<em>Additionally, returning customers may also return their jars to recieve a discount on their next order!</em>
+					less plastic. Additionally, returning customers may also return their jars to recieve a discount on their next order!
 				</p>
 				<p>
 					Pick'd powders also come boosted with naturally-sourced essential vitamins and minerals to ensure maximum nutrition. For more information about our
 					ingredients, consider visiting our FAQ.
+				</p>
+				<p>
+					<em>Cost is based on size.</em>
 				</p>
 				<form onSubmit={this.props.handleSubmit(this.props.onFormSubmit)}>
 					<Field name="size" choices={this.sizeChoices} component={Select} id="size" />
