@@ -1,21 +1,26 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 
+import '../../styles/PickdConfirmation.css';
+import logo from '../../assets/leaf.svg';
 class PickdConfirmation extends React.Component {
 	render() {
-		const { payer, purchase_units } = this.props.confirmation;
+		const { payer } = this.props.confirmation;
 		return (
-			<div className="ui raised container segment center aligned">
+			<div id="confirmation" className="container">
 				<h1>Order Confirmation:</h1>
-				<h4>Order ID: {this.props.confirmation.id}</h4>
+				<h2>Order ID: {this.props.confirmation.id}</h2>
 				<p>
-					Thank you <span>{`${payer.name.given_name} ${payer.name.surname}`}</span> for your order! We've received your order and will contact you as soon as
-					your package is shipped.
+					Thank you <b>{`${payer.name.given_name} ${payer.name.surname}`}</b>! We've received your order and we'll contact you through email as soon as your
+					package has shipped.
 				</p>
 				<p>
-					An email with additional details about your order was sent to <span>{purchase_units[0].payee.email_address}</span>
+					Until then, stay safe and stay healthy!
+					<br />
+					-with love, Pick'd
+					<br /> :)
 				</p>
-				<h3>Thank you for picking Pick'd!</h3>
+				<img src={logo} alt="Pick'd Logo" id="confirmation-pic" />
 			</div>
 		);
 	}

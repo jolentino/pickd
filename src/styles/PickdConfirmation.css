@@ -1,0 +1,16 @@
+#confirmation {
+	max-width: 50rem;
+	padding: 2rem;
+	text-align: center;
+	font-size: 2.25rem;
+}
+
+#confirmation h1,
+#confirmation h2 {
+	margin-bottom: 2rem;
+}
+
+#confirmation-pic {
+	margin: 1rem;
+	width: 3rem;
+}
