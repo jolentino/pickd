@@ -17,5 +17,9 @@ export const PayPal = (props) => {
 		});
 	};
 
-	return <PayPalButtons fundingSource="paypal" createOrder={createOrder} onApprove={props.onApprove} />;
+	return (
+		<div style={{maxWidth: '200px', margin: '1rem auto'}}>
+			<PayPalButtons fundingSource="paypal" createOrder={createOrder} onApprove={props.onApprove}/>
+		</div>
+	);
 };
