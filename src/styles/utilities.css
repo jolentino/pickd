@@ -10,7 +10,19 @@ button {
 
 button:hover {
 	cursor: pointer;
-  background-color: #007f00;
-  font-size: 1.4rem;
+	background-color: #007f00;
+	font-size: 1.4rem;
 	transition: all 0.2s ease-in-out;
+}
+
+select {
+	width: 100%;
+	max-width: 20rem;
+	padding: 0.25em 0.5em;
+	margin-left: 0.5rem;
+	margin-bottom: 1.5rem;
+	border: 3px solid #279c2b81;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	background-color: rgb(242, 255, 240);
 }
