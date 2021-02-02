@@ -1,7 +1,9 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
+import { motion } from 'framer-motion';
 
 import '../../styles/components/PickdProduct.css';
+import animation from '../../animation';
 import { createProduct } from '../../actions/';
 import PickdInteractive from './PickdInteractive';
 import PickdForm from './PickdForm';
@@ -22,10 +24,10 @@ class PickdProduct extends React.Component {
 
 	render() {
 		return (
-			<div id="build" className="container">
+			<motion.div id="build" className="container" {...animation}>
 				<PickdInteractive />
 				<PickdForm onFormSubmit={this.onFormSubmit} />
-			</div>
+			</motion.div>
 		);
 	}
 }

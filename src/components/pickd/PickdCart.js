@@ -1,7 +1,9 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
+import { motion } from 'framer-motion';
 
 import '../../styles/components/PickdCart.css';
+import animation from '../../animation';
 import { PayPal } from '../utilities/PayPal';
 import { orderProduct } from '../../actions';
 import { textConverter } from '../../textConverter';
@@ -71,10 +73,10 @@ class PickdCart extends React.Component {
 	// Conditional cart.
 	render() {
 		return (
-			<div id="cart" className="container">
+			<motion.div id="cart" className="container" {...animation}>
 				<h1 id="cart-title">Your Order:</h1>
 				{this.props.product ? this.renderProductSummary() : 'Your cart is empty!'}
-			</div>
+			</motion.div>
 		);
 	}
 }

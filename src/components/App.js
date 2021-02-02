@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Router, Route } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 
 import '../styles/components/App.css';
 import history from '../history';
@@ -14,10 +15,12 @@ const App = () => {
 		<div id="pickd">
 			<Router history={history}>
 				<Header />
-				<Route path="/" exact component={PickdHome} />
-				<Route path="/build" exact component={PickdProduct} />
-				<Route path="/cart" exact component={PickdCart} />
-				<Route path="/confirmation/:order" exact component={PickdConfirmation} />
+				<AnimatePresence exitBeforeEnter>
+					<Route path="/" exact component={PickdHome} />
+					<Route path="/build" exact component={PickdProduct} />
+					<Route path="/cart" exact component={PickdCart} />
+					<Route path="/confirmation/:order" exact component={PickdConfirmation} />
+				</AnimatePresence>
 			</Router>
 		</div>
 	);

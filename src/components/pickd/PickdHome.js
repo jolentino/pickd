@@ -1,18 +1,21 @@
 import * as React from 'react';
+import { motion } from 'framer-motion';
 
 import '../../styles/components/PickdHome.css';
+import animation from '../../animation';
 import history from '../../history';
 import Button from '../utilities/Button';
 import heroVideo from '../../assets/hero.gif';
 
 const PickdHome = () => {
+	console.log({ ...animation });
 	const buttonConfig = {
 		label: "Let's Get Started",
 		onButtonClick: () => history.push('/build'),
 	};
 
 	return (
-		<div id="hero" className="container">
+		<motion.div id="hero" className="container" {...animation}>
 			<img src={heroVideo} alt="Pick'd Logo" id="hero-video" />
 			<h1>Your taste is unique. Why settle? </h1>
 			<p id="mission" className="headings">
@@ -21,7 +24,7 @@ const PickdHome = () => {
 				We value your health as well as the Earth's, so our ingredients are always organic and sustainable.
 			</p>
 			<Button buttonConfig={buttonConfig} />
-		</div>
+		</motion.div>
 	);
 };
 
