@@ -13,8 +13,8 @@ class PickdConfirmation extends React.Component {
 				<h3>Order Confirmation:</h3>
 				<h5>Order ID: {this.props.confirmation.id}</h5>
 				<p>
-					Thank you <b>{`${payer.name.given_name} ${payer.name.surname}`}</b>! We've received your order and sent you an email with further details about your
-					purchase. We'll contact you again as soon as your package has shipped.
+					Thank you <b>{`${payer.name.given_name} ${payer.name.surname}`}</b>! We've received your order and have sent you an email with further details about
+					your purchase. We'll contact you again as soon as your package has shipped.
 				</p>
 				<p>
 					Until then, stay safe and stay healthy!
