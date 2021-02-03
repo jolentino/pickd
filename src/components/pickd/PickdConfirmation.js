@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import '../../styles/components/PickdConfirmation.css';
 import animation from '../../animation';
 import PageNotFound from '../PageNotFound';
-import history from '../../history';
 import logo from '../../assets/leaf.svg';
 
 class PickdConfirmation extends React.Component {
