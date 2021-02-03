@@ -8,7 +8,6 @@ import Button from '../utilities/Button';
 import heroVideo from '../../assets/hero.gif';
 
 const PickdHome = () => {
-	console.log({ ...animation });
 	const buttonConfig = {
 		label: "Let's Get Started",
 		onButtonClick: () => history.push('/build'),
