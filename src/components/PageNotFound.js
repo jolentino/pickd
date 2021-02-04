@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import animation from '../animation';
 import error from '../assets/error.svg';
 
+// Standard Error Component
 const PageNotFound = () => {
 	return (
 		<motion.div className="container" {...animation} style={{ textAlign: 'center' }}>

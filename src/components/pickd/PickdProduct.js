@@ -9,6 +9,7 @@ import PickdInteractive from './PickdInteractive';
 import PickdForm from './PickdForm';
 
 class PickdProduct extends React.Component {
+	// Callback method that connects and sends form values to the store's reducers.
 	onFormSubmit = (formValues) => {
 		// Validation to prevent default value
 		for (let choice in formValues) {

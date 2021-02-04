@@ -7,6 +7,7 @@ import history from '../../history';
 import Button from '../utilities/Button';
 import heroVideo from '../../assets/hero.gif';
 
+// Standard landing page.
 const PickdHome = () => {
 	const buttonConfig = {
 		label: "Let's Get Started",

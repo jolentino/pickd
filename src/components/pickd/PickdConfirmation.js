@@ -9,9 +9,12 @@ import logo from '../../assets/leaf.svg';
 
 class PickdConfirmation extends React.Component {
 	render() {
+		// Contigency component if the user refreshes and loses confirmation state.
 		if (!this.props.confirmation) {
 			return <PageNotFound />;
 		}
+
+		// Destructured information from captured PayPal transaction.
 		const { payer } = this.props.confirmation;
 		return (
 			<motion.div id="confirmation" className="container" {...animation}>

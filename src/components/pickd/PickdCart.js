@@ -12,7 +12,7 @@ import Button from '../utilities/Button';
 import history from '../../history';
 
 class PickdCart extends React.Component {
-	// Config object for Button
+	// Config object for Button.
 	buttonConfig = {
 		label: 'Start Over',
 		onButtonClick: () => history.push('/build'),
@@ -20,6 +20,7 @@ class PickdCart extends React.Component {
 	};
 
 	// Callback for PayPal API to invoke 'Product Confirmation' action creator.
+	// It has to wait for the transaction to be captured first.
 	onApprove = async (data, actions) => {
 		const response = await actions.order.capture();
 		this.props.orderProduct(response);
@@ -57,6 +58,7 @@ class PickdCart extends React.Component {
 			);
 		}
 
+		// Cart info includes summary, image of product, and PayPal button.
 		return (
 			<div id="product-summary">
 				<PickdInteractive finishedProduct={product} />
@@ -81,6 +83,7 @@ class PickdCart extends React.Component {
 	}
 }
 
+// Retrieves reduced form values.
 const mapStateToProps = (state) => {
 	return { product: state.pickd.product };
 };

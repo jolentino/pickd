@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import { PayPalButtons } from '@paypal/react-paypal-js';
 
+// Configured PayPal Button
 export const PayPal = (props) => {
 	const createOrder = (data, actions) => {
 		return actions.order.create({

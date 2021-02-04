@@ -15,6 +15,7 @@ const App = () => {
 		<div id="pickd">
 			<Router history={history}>
 				<Header />
+				{/* Provider for Framer-Motion animations */}
 				<AnimatePresence exitBeforeEnter>
 					<Route path="/" exact component={PickdHome} />
 					<Route path="/build" exact component={PickdProduct} />

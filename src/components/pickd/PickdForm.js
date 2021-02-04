@@ -5,8 +5,9 @@ import { Field, reduxForm } from 'redux-form';
 import { Select } from '../utilities/Select';
 import Button from '../utilities/Button';
 
+// Build page's form and info section.
 class PickdForm extends React.Component {
-	// Powder Combinations
+	// Powder choices.
 	sizeChoices = ['32oz', '64oz'];
 	flavorChoices = ['Chocolate', 'Chocolate Peanut Butter', 'Cookies and Cream', 'Vanilla', 'Very Berry'];
 	proteinChoices = ['Hemp', 'Pea', 'Rice', 'Soy'];
@@ -28,6 +29,7 @@ class PickdForm extends React.Component {
 				<p>
 					<em>Cost is based on size.</em>
 				</p>
+				{/* Each field is passed the Select utility component and appropriate <options> values */}
 				<form onSubmit={this.props.handleSubmit(this.props.onFormSubmit)}>
 					<Field name="size" choices={this.sizeChoices} component={Select} id="size" />
 					<Field name="flavor" choices={this.flavorChoices} component={Select} id="flavor" />

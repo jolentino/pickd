@@ -44,6 +44,7 @@ class PickdInteractive extends React.Component {
 
 	// Helper method to render images onto Interactive Display configured by choice type and user input.
 	renderChoice(type) {
+		// Condition to validate existence of choice and to ignore default value.
 		if (this.props[type] && this.props[type] !== `Choose a ${type}`) {
 			const choice = this.props[type];
 			return <motion.img src={this.choices[choice]} alt={`${choice}`} className={type} {...animation} />;
@@ -67,7 +68,7 @@ class PickdInteractive extends React.Component {
 // Redux Form method to directly access form values.
 const selector = formValueSelector('proteinForm');
 
-// Form values from specific fields are added to the state to be recieved.
+// Values from each field are retrieved, if they exist.
 const mapStateToProps = (state, { finishedProduct }) => {
 	let flavor, protein, fat, carb;
 

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import '../styles/components/Header.css';
 import logo from '../assets/leaf.svg';
 
+// Standard Header component with three buttons divided into two sections.
 const Header = () => {
 	return (
 		<div id="nav-bar">
