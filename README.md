@@ -5,7 +5,7 @@
     <img src="https://jolentino.netlify.app/imgs/pickd.gif" alt="Logo" width="400">
   </a>
 
-  <a href="https://tolentino-pickd.netlify.app/"><h1 align="center">Pick'd</h3></a>
+  <a href="https://tolentino-pickd.netlify.app/"><h1 align="center">Pick'd</h1></a>
 
   <p align="center">
     <b>NOTE:</b> To complete your checkout through the PayPal Sandbox, use these credentials:
