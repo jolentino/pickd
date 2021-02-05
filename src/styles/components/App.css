@@ -4,8 +4,7 @@ html {
 }
 
 #pickd {
-	height: 100vh;
-	min-width: 320px;
+	min-width: 300px;
 }
 
 .container {

@@ -1,5 +1,5 @@
 #cart {
-	max-width: 75rem;
+	max-width: 750px;
 	font-size: 1.75rem;
 	text-align: center;
 }
@@ -15,15 +15,11 @@
 }
 
 #order-info {
-	min-width: 30rem;
+	min-width: 300px;
 }
 
 @media (max-width: 700px) {
 	#product-summary {
 		flex-direction: column-reverse;
-	}
-
-	#cart-title {
-		margin-bottom: 0;
 	}
 }

@@ -8,8 +8,9 @@
 }
 
 #hero-video {
-  width: 30%;
-  margin-bottom: .5rem;
+	width: 35vh;
+	height: 35vh;
+	margin-bottom: 2rem;
 	border-radius: 100%;
 }
 
@@ -20,11 +21,7 @@
 
 @media (max-width: 500px) {
 	#hero {
-		min-height: 80%;
-	}
-
-	#hero-video {
-		width: 65%;
+		min-height: 70vh;
 	}
 
 	#mission {
