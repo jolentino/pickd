@@ -23,8 +23,7 @@ class PickdForm extends React.Component {
 					less plastic. Additionally, returning customers may also return their jars to recieve a discount on their next order!
 				</p>
 				<p>
-					Pick'd powders also come boosted with naturally-sourced essential vitamins and minerals to ensure maximum nutrition. For more information about our
-					ingredients, consider visiting our FAQ.
+					Pick'd powders also come boosted with naturally-sourced essential vitamins and minerals to ensure maximum nutrition.
 				</p>
 				<p>
 					<em>Cost is based on size.</em>
